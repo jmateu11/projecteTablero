@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejemplos CSS</title>
+	<link rel="stylesheet" type="text/css" href="css/estilos4.css">
+</head>
+<body onload="alert('Bienvenido a mi super web')">
+
+	<button onclick="saludo()">
+		Clica aquí por favor
+	</button>
+
+	<button onclick="cambiarFondo()">
+		Clica para cambiar fondo
+	</button>
+	<br>
+	<script> 
+		function cambiarFondo(){
+			document.body.style.backgroundColor="yellow";
+		}
+
+
+		function saludo(){
+			alert("Saludosssss!!!");
+			var ventana=window.open();
+			ventana.document.open();
+			ventana.document.write("Holita desde mi web");
+			ventana.document.close();
+		}
+	</script>
+
+	<section id="contenedor">
+		<div id="caja1"> Caja 1 </div>
+		<div id="caja2"> Caja 2 </div>
+		<div id="caja3"> Caja 3 </div>
+		<div id="caja4"> Caja 4 </div>
+	</section>
+
+
+</body>
+</html>
